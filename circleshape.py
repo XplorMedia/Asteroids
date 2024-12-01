@@ -24,6 +24,7 @@ class CircleShape(pygame.sprite.Sprite):
     def collision_detection(self,other):
         self_vector = self.position
         other_vector = other.position
+        #print(f"self.position type: {type(self_vector)}, other.position type: {type(other_vector)}")  # Debugging print
         distance = self_vector.distance_to(other_vector)
         self_radius = self.radius
         other_radius = other.radius
